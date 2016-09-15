@@ -7,7 +7,7 @@
 
 - name: Add tomcat user
   user: "name={{ tomcat_system_user }} group={{ tomcat_system_group }} home={{ tomcat_system_home }} createhome=yes"
-  sudo: True
+  become: True
 
 - name: Download Tomcat tarball
   get_url:
