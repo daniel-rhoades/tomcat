@@ -23,7 +23,7 @@
     mode: ug+x
 
 - name: Install wget for optionally downloading the distribution from a given URL
-  apt: name=wget state=present
+  package: name=wget state=present
 
 - name: Create a "downloads" directory to hold downloaded distributions
   file:
